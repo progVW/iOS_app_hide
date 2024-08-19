@@ -23,6 +23,9 @@
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Show All"/>
+                                <connections>
+                                    <action selector="showAllAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IU5-Rz-EbM"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WBx-kR-BCJ">
                                 <rect key="frame" x="16" y="385" width="221" height="178"/>
@@ -64,6 +67,9 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Hide"/>
+                                <connections>
+                                    <action selector="hideFirstAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KsN-nb-rMq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFE-Vm-XAe">
                                 <rect key="frame" x="281" y="443" width="96" height="62"/>
@@ -72,6 +78,9 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Hide"/>
+                                <connections>
+                                    <action selector="hideSecondAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pig-Fh-6vh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8A-v0-gbh">
                                 <rect key="frame" x="281" y="667" width="96" height="62"/>
@@ -80,11 +89,23 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Hide"/>
+                                <connections>
+                                    <action selector="hideThirdAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lYQ-pw-XUI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="firstImage" destination="TWD-x6-02e" id="XTm-i4-lfF"/>
+                        <outlet property="hideFirstButton" destination="iH1-wI-5xD" id="Huc-CG-ZVC"/>
+                        <outlet property="hideSecondButton" destination="UFE-Vm-XAe" id="sYH-uK-yDS"/>
+                        <outlet property="hideThirdButton" destination="M8A-v0-gbh" id="ARt-xf-tWy"/>
+                        <outlet property="secondImage" destination="3RD-td-dP2" id="f9G-Eq-ehW"/>
+                        <outlet property="showAllButton" destination="Moc-Cg-vCl" id="Tna-e1-xuU"/>
+                        <outlet property="thirdImage" destination="kKe-Nd-JUd" id="NJK-EF-Ltd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
